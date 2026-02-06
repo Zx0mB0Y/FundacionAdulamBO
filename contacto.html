@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Fundación Adulam de Bolivia | Contacto</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <!-- EDITAR: Si querés tipografías, podés agregar Google Fonts aquí -->
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Inicio">
+      <img src="assets/img/logo-adulam.jpg" alt="Logo Fundación Adulam">
+      <span>FUNDACIÓN ADULAM</span>
+    </a>
+
+    <nav class="menu" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="quienes-somos.html">Quiénes somos</a>
+      <a href="programas.html">Programas</a>
+      <a href="contacto.html">Contacto</a>
+
+      <!-- EDITAR: Pegá aquí el link real de Facebook -->
+      
+      <div class="social-icons">
+  <!-- EDITAR: Pegá links reales -->
+  <a class="social-btn" href="https://www.facebook.com/profile.php?id=61550271633517" target="_blank" rel="noopener" aria-label="Facebook">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-3h2V9.8c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.6l-.4 3h-2.2v7A10 10 0 0 0 22 12z"/></svg>
+  </a>
+  <a class="social-btn" href="https://www.instagram.com/adulambolivia.1?fbclid=IwY2xjawPyIMtleHRuA2FlbQIxMABicmlkETF1WjJ4V0R4Rk9FcjROSEJLc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHhE4-3NJKMuInoF-RmfOGwGABl1U0Y432PvjteP0oFSiQXaVoxuhPAKxq9CD_aem_aqTNN3lay6WGnvpjCTtsKQ" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.5a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/></svg>
+  </a>
+</div>
+    </nav>
+
+    <div class="cta">
+      <a class="btn primary donate-btn" href="donaciones.html">Donar <svg class="heart-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.2-4.6-9.6-8.6C.5 9.1 2.2 6 5.6 6c1.9 0 3.2 1 4 2 0 0 .9 1.2 2.4 1.2S14.4 8 14.4 8c.8-1 2.1-2 4-2 3.4 0 5.1 3.1 3.2 6.4C19.2 16.4 12 21 12 21z"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section" style="padding-top:52px">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p class="lead">
+      <!-- EDITAR: mensaje -->
+      Si querés donar, ser voluntario o conocer más, escribinos. Te responderemos a la brevedad.
+    </p>
+
+    <div class="split" style="margin-top:14px">
+      <div class="card">
+        <h3>Datos de contacto</h3>
+        <p class="small"><strong>WhatsApp:</strong> +591 62184495</p>
+        <p class="small"><strong>Correo:</strong> adulambolivia@gmail.com</p>
+        <p class="small"><strong>Ciudad:</strong> Santa Cruz de la Sierra</p>
+        <p class="small"><strong>Dirección:</strong> AV. Banzer 6to Anillo</p>
+        <p class="small"><strong>Facebook:</strong> Fundación Adulam en Bolivia</p>
+
+        <div class="note" style="margin-top:12px">
+          <!-- EDITAR -->
+          Si estás enviando comprobante de donación, por favor incluí tu nombre y fecha.
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Formulario</h3>
+        <p class="small">Este formulario abre el correo del usuario (no guarda datos).</p>
+
+        <form id="contactForm" class="form">
+  <input id="nombre" class="input" placeholder="Tu nombre" required />
+  <input id="telefono" class="input" placeholder="Teléfono / WhatsApp" />
+  <input id="asunto" class="input" placeholder="Asunto" required />
+  <textarea id="mensaje" placeholder="Escribí tu mensaje..." required></textarea>
+
+  <button class="btn primary" type="submit">
+    Enviar por WhatsApp
+  </button>
+</form>
+
+        <p class="small" style="margin-top:10px">
+          Si preferís, podés contactarnos directo por WhatsApp.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <!-- EDITAR: Colocá aquí ciudad, teléfono, redes, etc. -->
+    <div><strong>Fundación Adulam de Bolivia</strong> · Sitio informativo sin fines de lucro.</div>
+    <div class="small">© 2026 Fundación Adulam. Todos los derechos reservados.</div>
+  </div>
+</footer>
+<script>
+  (function () {
+    const PHONE = "59162184495"; // WhatsApp Fundación (sin +)
+
+    const form = document.getElementById("contactForm");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombre").value.trim();
+      const telefono = document.getElementById("telefono").value.trim();
+      const asunto = document.getElementById("asunto").value.trim();
+      const mensaje = document.getElementById("mensaje").value.trim();
+
+      const texto =
+`Hola Fundación Adulam 👋
+Nombre: ${nombre}
+Teléfono: ${telefono || "No especificado"}
+Asunto: ${asunto}
+Mensaje: ${mensaje}`;
+
+      const url = "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(texto);
+      window.open(url, "_blank");
+    });
+  })();
+</script>
+</body>
+</html>
